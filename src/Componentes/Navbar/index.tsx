@@ -5,7 +5,7 @@ import "./style.css";
 function Navbar () {
     const textDecoration = ' underline underline-offser-4'
     return(
-        <nav className="flex justify-between items-center fixed z-10 w-full py-2 px-8 text-sm font-light top-0 verdepastel">
+        <nav className="flex justify-between items-center fixed z-10 w-full py-2 px-8 text-sm font-light top-0 verdepastel border-r-neutral-950 border">
             <ul className="flex items-center  gap-5">
                 <li className=" font-semibold text-lg">
                     <NavLink

@@ -14,8 +14,9 @@ function Animado() {
                     
             </div>
             <div className="imagen seccion-campo">
+                
                 <p className="mt-6 text-lg leading-8 text-gray-300 font-medium text">
-             |React para el Fronted usando lenguanjes como Javascript y Typescript|framework como Spring Boot usando Java| Mysql como Base de datos| Experiencia con PHP
+              Contratame 😇
             </p>
                     <img src={Cascada}/>
                

@@ -1,18 +1,25 @@
 import { NavLink } from "react-router-dom";
-import { BsCodeSlash} from 'react-icons/bs';
-import "./style.css";
+import { MdWork } from "react-icons/md";
+import { GiSkills } from "react-icons/gi";
+import { BsFillHouseDoorFill} from 'react-icons/bs';
+import { FaBlogger } from "react-icons/fa";
+import "../../App.css";
+
+
 
 function Navbar () {
-    const textDecoration = ' underline underline-offser-4'
+    const textDecoration = 'animate-pulse'
+    
     return(
-        <nav className="flex justify-between items-center fixed z-10 w-full py-2 px-8 text-sm font-light top-0 verdepastel border-r-neutral-950 border">
+        
+        <nav className="flex justify-items-center justify-between items-center fixed z-10 w-[350px] py-2 px-8 bottom-0  inset-x-0 mx-auto  border-double border-4 rounded-full  drop-shadow-lg bg-[var(--color-tercero)]">
             <ul className="flex items-center  gap-5">
                 <li className=" font-semibold text-lg">
                     <NavLink
                     to='/'
                     className= {({isActive})=> isActive ? textDecoration : undefined }
                     >
-                     <span><BsCodeSlash className=" absolute left-1 h-7 w-auto"/>Vladimir Farrera</span>
+                     <span><BsFillHouseDoorFill color="var(--color-secundario)" className=" h-9 w-auto "/></span>
                     </NavLink>
                 </li>
                 <li>
@@ -20,7 +27,7 @@ function Navbar () {
                     to='/habilidades'
                     className={({isActive})=> isActive ? textDecoration : undefined }
                     >
-                    Habilidades
+                    <GiSkills color="var(--color-secundario)" className="h-9 w-auto"/>
                     </NavLink>
                 </li>
                 <li>
@@ -28,7 +35,7 @@ function Navbar () {
                     to='/proyectos'
                     className={({isActive})=> isActive ? textDecoration : undefined }
                     >
-                    Proyectos
+                    <MdWork color="var(--color-secundario)" className="h-9 w-auto"/>
                     </NavLink>
                 </li>
 
@@ -39,11 +46,12 @@ function Navbar () {
                     to='/blog'
                     className={({isActive})=> isActive ? textDecoration : undefined }
                     >
-                    Blog
+                    <FaBlogger color="var(--color-secundario)" className="h-9 w-auto"/>
                     </NavLink>
                 </li>
             </ul>
         </nav>
+        
     );
 }
 

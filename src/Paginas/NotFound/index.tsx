@@ -1,8 +1,8 @@
 function NotFound () {
     return(
         <div>
-            Notfound
-        </div>
+not NotFound
+ </div>
     );
 }
 export default NotFound

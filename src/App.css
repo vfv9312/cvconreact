@@ -7,6 +7,9 @@
   --color-secundario :#64ffda;
   --color-primario : #112240;
   --color-tercero: black;
+  --color-tema-claro-primario: #61708B;
+  --color-tema-claro-tercero: #6DB579;
+  
 }
 
 .text{

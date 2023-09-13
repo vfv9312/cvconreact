@@ -1,5 +1,6 @@
 import { useRoutes , BrowserRouter, RouterProvider, createBrowserRouter } from "react-router-dom";
-import React from "react";
+import {GlobalProvider} from "./Context";
+import { Contactame } from "./Componentes/Contactame";
 import Principal from './Paginas/Principal';
 import Navbar from './Componentes/Navbar';
 import Acercade from './Paginas/Acerca de';
@@ -24,11 +25,14 @@ function App() {
 
 
   return (
-    
+<GlobalProvider>
     <BrowserRouter>
     <Navbar/>
-<AppRutas/>
-</BrowserRouter>
+    <AppRutas/>
+    <Contactame/>
+    </BrowserRouter>
+</GlobalProvider>
+
   )
 }
 

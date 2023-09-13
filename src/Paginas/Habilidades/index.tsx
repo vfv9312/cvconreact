@@ -5,7 +5,6 @@ function Habilidades () {
     return (
         <div>
             Habilidades
-            <Reloj/>
         </div>
     );
 }

@@ -1,7 +1,9 @@
+import Trabajos from "../../Componentes/Trabajos";
+
 function Proyectos () {
 return(
     <section>
-        Proyectos
+        <Trabajos/>
     </section>
 );
 }

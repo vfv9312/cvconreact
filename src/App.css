@@ -19,12 +19,4 @@
     y nos indicara en este caso en pixeles la profundidad*/
 }
 
-.efecto1{
-  transform: translateZ(0px) scale(1);
-  /*el que crea el efecto es el traslateZ
-    en este caso como es el fondo tendra 0 osea estara a la altura
-    de la profundidad indicada en perspectiva*/
-  transform-origin: 0 50%;
-  /*En este origin indicamos que inicie al 50% (la mitas)
-    en x*/
-}
+

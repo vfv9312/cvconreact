@@ -19,7 +19,7 @@ function Navbar () {
                     to='/'
                     className= {({isActive})=> isActive ? textDecoration : undefined }
                     >
-                     <span><BsFillHouseDoorFill color="var(--color-secundario)" className=" h-9 w-auto "/></span>
+                     <span><BsFillHouseDoorFill color="var(--color-secundario)" className=" h-9 w-auto hover:scale-110 transition-transform"/></span>
                     </NavLink>
                 </li>
                 <li>
@@ -27,7 +27,7 @@ function Navbar () {
                     to='/habilidades'
                     className={({isActive})=> isActive ? textDecoration : undefined }
                     >
-                    <GiSkills color="var(--color-secundario)" className="h-9 w-auto"/>
+                    <GiSkills color="var(--color-secundario)" className="h-9 w-auto hover:scale-110 transition-transform"/>
                     </NavLink>
                 </li>
                 <li>
@@ -35,7 +35,7 @@ function Navbar () {
                     to='/proyectos'
                     className={({isActive})=> isActive ? textDecoration : undefined }
                     >
-                    <MdWork color="var(--color-secundario)" className="h-9 w-auto"/>
+                    <MdWork color="var(--color-secundario)" className="h-9 w-auto hover:scale-110 transition-transform"/>
                     </NavLink>
                 </li>
 
@@ -46,7 +46,7 @@ function Navbar () {
                     to='/blog'
                     className={({isActive})=> isActive ? textDecoration : undefined }
                     >
-                    <FaBlogger color="var(--color-secundario)" className="h-9 w-auto"/>
+                    <FaBlogger color="var(--color-secundario)" className="h-9 w-auto hover:scale-110 transition-transform"/>
                     </NavLink>
                 </li>
             </ul>

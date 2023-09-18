@@ -16,10 +16,126 @@
   text-shadow: 3px 3px 0 rebeccapurple;
 }
 
-.perspective-20{
-  perspective: 20px;
-  /*La perspectiva tiene que ir en el padre
-    y nos indicara en este caso en pixeles la profundidad*/
+.parallax-container{
+  perspective: 8px;
+  perspective-origin: 50%;
 }
+
+.imagen{
+  transform: 0 50%;
+}
+
+.image-background{
+  transform: translateZ(0px) scale(1);
+  transform-origin: 0 50%;
+}
+
+.image-middle{
+  transform: translateZ(5px) scale(0.375);
+  transform-origin: 50%;
+}
+
+.image_foreground{
+  transform: translateZ(3px) scale(.5);
+  transform-origin: 15% 200%;
+}
+.card-one{
+  left: 10%;
+}
+.card-two{
+  right: 10%;
+  top: 70%;
+}
+.card-three{
+  left: 30%;
+  top: 50%;
+}
+.card-four{
+  left: 50%;
+  top: 200%;
+}
+
+.image_foregroundone{
+  transform: translateZ(2px) scale(0.5);
+  transform-origin: 100% 200%;
+}
+
+.image_foregroundtwo{
+  transform: translateZ(2px) scale(0.5);
+  transform-origin: 40% 300%;
+}
+
+.image_foregroundthree{
+  transform: translateZ(3px) scale(0.5);
+  transform-origin: 80% 400%;
+}
+
+.image_foregroundfour{
+  transform: translateZ(3px) scale(0.5);
+  transform-origin: 80% 400%;
+}
+
+.book {
+  position: relative;
+  border-radius: 10px;
+  width: 220px;
+  height: 300px;
+  background-color: whitesmoke;
+  -webkit-box-shadow: 1px 1px 12px #000;
+  box-shadow: 1px 1px 12px #000;
+  -webkit-transform: preserve-3d;
+  -ms-transform: preserve-3d;
+  transform: preserve-3d;
+  -webkit-perspective: 2000px;
+  perspective: 2000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #000;
+}
+
+.cover {
+  top: 0;
+  position: absolute;
+  background-color: lightgray;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform-origin: 0;
+  -ms-transform-origin: 0;
+  transform-origin: 0;
+  -webkit-box-shadow: 1px 1px 12px #000;
+  box-shadow: 1px 1px 12px #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.book:hover .cover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: rotatey(-80deg);
+  -ms-transform: rotatey(-80deg);
+  transform: rotatey(-80deg);
+}
+
+
+
+
 
 

@@ -11,11 +11,18 @@ function GlobalProvider({children}:{children:React.ReactNode}):JSX.Element {
   const TemaClaro:string = 'bg-gradient-to-r from-[var(--color-tema-claro-primario)] to-[var(--color-tema-claro-tercero)]';
 
   //para saber si se abre o cierra un portal
-  const [openModal, setOpenModal] = useState(true)
+  const [openModal, setOpenModal] = useState(false)
+
+  //valores del modal
+  let [titulo, setTitulo] = useState('')
  
-  
+  //textoproyecto
+  const tituloPortafolio: { titulo: string; desarrollado: string; imagen?:string }[] = [{ titulo: 'Atrapa Gatos', desarrollado: 'Desarrollado con HTML y CSS', imagen:''},
+{titulo:'Juego Princesa', desarrollado:'Desarrollado Javascript, HTML y CSS', imagen:''},{titulo:'Tienda Online', desarrollado:'React, HTML, CSS', imagen:''},{titulo:'Elementales', desarrollado:'Javascrpt, HTML y CSS', imagen:''},{titulo:'C5', desarrollado:'Javascript, HTML y CSS', imagen:''}];
+
     return(
-      <GlobalContext.Provider value={{openModal, setOpenModal, cambiarVariable, setCambiarVariable, Temaoscuro,TemaClaro}}>
+      <GlobalContext.Provider value={{openModal, setOpenModal, cambiarVariable, setCambiarVariable, Temaoscuro,TemaClaro, titulo, setTitulo,
+      }}>
           {children}
       </GlobalContext.Provider>
        

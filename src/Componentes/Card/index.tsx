@@ -1,3 +1,4 @@
+import 'animate.css';
 import "../../App.css"
 
 
@@ -5,7 +6,7 @@ import "../../App.css"
 const Card = ({titulos,imagen,descripcion,link}) => {
 
     return(
-<section className="">
+<section className="animate__animated animate__fadeInDownBig">
 <div className="book  w-64 h-80 bg-neutral-800 rounded-3xl text-neutral-300 p-4 flex flex-col items-start justify-center gap-3 hover:bg-gray-900 hover:shadow-2xl hover:shadow-sky-400 transition-shadow">
 <div className=" w-48 h-full ml-10">
 <p className="font-extrabold ">{titulos}</p>

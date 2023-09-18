@@ -16,10 +16,6 @@ function GlobalProvider({children}:{children:React.ReactNode}):JSX.Element {
   //valores del modal
   let [titulo, setTitulo] = useState('')
  
-  //textoproyecto
-  const tituloPortafolio: { titulo: string; desarrollado: string; imagen?:string }[] = [{ titulo: 'Atrapa Gatos', desarrollado: 'Desarrollado con HTML y CSS', imagen:''},
-{titulo:'Juego Princesa', desarrollado:'Desarrollado Javascript, HTML y CSS', imagen:''},{titulo:'Tienda Online', desarrollado:'React, HTML, CSS', imagen:''},{titulo:'Elementales', desarrollado:'Javascrpt, HTML y CSS', imagen:''},{titulo:'C5', desarrollado:'Javascript, HTML y CSS', imagen:''}];
-
     return(
       <GlobalContext.Provider value={{openModal, setOpenModal, cambiarVariable, setCambiarVariable, Temaoscuro,TemaClaro, titulo, setTitulo,
       }}>

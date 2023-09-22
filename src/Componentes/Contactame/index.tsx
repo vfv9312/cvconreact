@@ -1,7 +1,7 @@
 import React from "react";
 import { MdEmail } from 'react-icons/md';
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
-import { AiOutlineBgColors, AiOutlineWhatsApp } from "react-icons/ai";
+import {  AiOutlineWhatsApp } from "react-icons/ai";
 
 
 function Contactame():JSX.Element {

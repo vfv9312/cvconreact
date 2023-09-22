@@ -1,16 +1,16 @@
-import  Reloj  from "../../Componentes/Reloj";
+
 import { GlobalContext } from "../../Context";
 import { useContext } from "react";
+
+
+
 
 function Habilidades () {
     const {cambiarVariable,
         TemaClaro, 
         Temaoscuro,
-         openModal,
-       setOpenModal,
-       titulo,
-       setTitulo
-     }:{cambiarVariable:boolean; TemaClaro:string;Temaoscuro:string; openModal:boolean; setOpenModal:boolean; titulo:string; setTitulo:string} = useContext(GlobalContext);
+
+     } = useContext(GlobalContext);
      const valoresClassdeSection = `flex flex-col ${cambiarVariable ? TemaClaro : Temaoscuro}`;
 
     return (

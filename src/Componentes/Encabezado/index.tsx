@@ -22,7 +22,7 @@ const Encabezado = () => {
     setOpenModal,
     titulo,
     setTitulo
-  }:{cambiarVariable:boolean; TemaClaro:string;Temaoscuro:string; openModal:boolean; setOpenModal:boolean; titulo:string; setTitulo:string} = useContext(GlobalContext)
+  } = useContext(GlobalContext)
 const valoresClassdeSection = `grid grid-cols-[1fr,2fr,2fr]  grid-rows-[1fr,1fr,1fr]   z-0 w-full max-h-screen relative perspective-20 overflow-x-hidden overflow-y-scroll ${cambiarVariable ? TemaClaro : Temaoscuro}`;
 
 

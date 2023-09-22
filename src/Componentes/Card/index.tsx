@@ -3,7 +3,16 @@ import "../../App.css"
 
 
 
-const Card = ({titulos,imagen,descripcion,link}) => {
+interface Datos {
+  titulos:string;
+  imagen: string;
+  descripcion: string;
+  link:string;
+  }
+
+
+
+const Card = ({titulos,imagen,descripcion,link}:Datos):JSX.Element => {
 
     return(
 <section className="animate__animated animate__fadeInDownBig">

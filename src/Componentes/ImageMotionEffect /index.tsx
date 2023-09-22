@@ -9,7 +9,12 @@ import  Elemental  from "../../assets/elementales.png";
 import  Princesa  from "../../assets/princesa.png";
 import'../../App.css'
 import { Card } from "../Card";
+
+
+
 const ImageMotionEffect = () => {
+
+
 
     const {cambiarVariable,
        TemaClaro, 

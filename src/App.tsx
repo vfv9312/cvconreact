@@ -15,7 +15,7 @@ let ruta = useRoutes([
   {path:'/proyectos', element:<Proyectos/>},
   {path:'/blog', element: <Acercade/>},
   {path:'/*', element: <NotFound/>},
-  {path:'/' ,element: <Principal/>},
+  {path:'/cvconreact/' ,element: <Principal/>},
 ]);
 return ruta;
 }

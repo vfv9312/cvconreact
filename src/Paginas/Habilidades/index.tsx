@@ -1,4 +1,5 @@
 
+import Trabajos from "../../Componentes/Trabajos";
 import { GlobalContext } from "../../Context";
 import { useContext } from "react";
 
@@ -24,6 +25,8 @@ function Habilidades () {
             <div className=" w-72 sm:w-96 h-9 rounded-lg bg-red-600 items-center absolute bottom-[-1] inset-x-0 mx-auto">
                 <h1 className="text-white text-center self-center">Experiencia, certificaciones y mas</h1></div>
                 </article>
+
+            <Trabajos></Trabajos>
 
         </section>
     );

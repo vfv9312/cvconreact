@@ -20,7 +20,7 @@ function Navbar () {
             <ul className="flex items-center  gap-5">
                 <li className=" font-semibold text-lg">
                     <NavLink
-                    to='/'
+                    to='/cvconreact/'
                     className= {({isActive})=> isActive ? textDecoration : undefined }
                     >
                      <span><BsFillHouseDoorFill color="var(--color-secundario)" className=" h-9 w-auto hover:scale-110 transition-transform"/></span>

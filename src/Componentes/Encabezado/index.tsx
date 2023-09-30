@@ -45,24 +45,24 @@ const valoresClassdeSection = `grid grid-cols-[1fr,2fr,2fr]  grid-rows-[1fr,1fr,
             <figure className='grid grid-cols-3 justify-center col-[2/4]'>
               <div className=' col-[1/2] m-[0_0_120px_0]'>
               <h1 className=' text-white'>Fronted</h1>
-            <FaReact color="var(--color-secundario)" className="h-11 w-auto cursor-pointer" onClick={() => {setOpenModal(!openModal); setTitulo ('React JS');}} /> 
-            <SiVite color="var(--color-secundario)" className="h-11 w-auto cursor-pointer" onClick={() => {setOpenModal(!openModal); setTitulo ('Vite');}}/>
-            <BiLogoHtml5 color="var(--color-secundario)" className="h-11 w-auto cursor-pointer" onClick={() => {setOpenModal(!openModal); setTitulo ('HTML 5');}}/>
-            <BiLogoCss3 color="var(--color-secundario)" className="h-11 w-auto cursor-pointer" onClick={() => {setOpenModal(!openModal); setTitulo ('CSS 3');}}/>
-            <BiLogoJavascript color="var(--color-secundario)" className="h-11 w-auto cursor-pointer" onClick={() => {setOpenModal(!openModal); setTitulo ('javascript');}}/>
-            <BiLogoTypescript color="var(--color-secundario)" className="h-11 w-auto cursor-pointer " onClick={() => {setOpenModal(!openModal); setTitulo ('Typescript');}}/>
-            <BiLogoTailwindCss color="var(--color-secundario)" className="h-11 w-auto cursor-pointer " onClick={() => {setOpenModal(!openModal); setTitulo ('Tailwild');}}/>
+            <FaReact color="var(--color-secundario)" className="h-11 w-auto cursor-pointer" onClick={() => {setOpenModal(!openModal); setTitulo ([{id:'0',tituloText:'ReactJs', imagen:'3 Certificados en Platzi',experiencia:'',conocimiento:'State, Portals, Componentes, '}]);}} /> 
+            <SiVite color="var(--color-secundario)" className="h-11 w-auto cursor-pointer" onClick={() => {setOpenModal(!openModal); setTitulo ([{id: '0',tituloText:'Vite', imagen:'Platzi',experiencia:'',conocimiento:''}]);}}/>
+            <BiLogoHtml5 color="var(--color-secundario)" className="h-11 w-auto cursor-pointer" onClick={() => {setOpenModal(!openModal); setTitulo ([{id: '0',tituloText:'HTML5', imagen:'Platzi',experiencia:'',conocimiento:''}]);}}/>
+            <BiLogoCss3 color="var(--color-secundario)" className="h-11 w-auto cursor-pointer" onClick={() => {setOpenModal(!openModal); setTitulo ([{id: '0',tituloText:'CSS3', imagen:'Platzi',experiencia:'',conocimiento:''}]);}}/>
+            <BiLogoJavascript color="var(--color-secundario)" className="h-11 w-auto cursor-pointer" onClick={() => {setOpenModal(!openModal); setTitulo ([{id: '0',tituloText:'Javascript', imagen:'Platzi',experiencia:'',conocimiento:''}]);}}/>
+            <BiLogoTypescript color="var(--color-secundario)" className="h-11 w-auto cursor-pointer " onClick={() => {setOpenModal(!openModal); setTitulo ([{id: '0',tituloText:'Typscript', imagen:'Platzi',experiencia:'',conocimiento:''}]);}}/>
+            <BiLogoTailwindCss color="var(--color-secundario)" className="h-11 w-auto cursor-pointer " onClick={() => {setOpenModal(!openModal); setTitulo ([{id: '0',tituloText:'Tailwind', imagen:'Platzi',experiencia:'',conocimiento:''}]);}}/>
             </div>
             <div className=' col-[2/3]'>
               <h1 className=' text-white'>Backed</h1>
-              <BiLogoSpringBoot color="var(--color-secundario)" className="h-11 w-auto cursor-pointer" onClick={() => {setOpenModal(!openModal); setTitulo ('SpringBoot');}}/>
-              <BiLogoJava color="var(--color-secundario)" className="h-11 w-auto cursor-pointer " onClick={() => {setOpenModal(!openModal); setTitulo ('Java');}}/>
-              <BiLogoPostgresql color="var(--color-secundario)" className="h-11 w-auto cursor-pointer " onClick={() => {setOpenModal(!openModal); setTitulo ('Postgresql');}}/>
-              <SiMysql color="var(--color-secundario)" className="h-11 w-auto cursor-pointer " onClick={() => {setOpenModal(!openModal); setTitulo ('Mysql');}}/>
+              <BiLogoSpringBoot color="var(--color-secundario)" className="h-11 w-auto cursor-pointer" onClick={() => {setOpenModal(!openModal); setTitulo ([{id: '0',tituloText:'SpringBoot', imagen:'Platzi',experiencia:'',conocimiento:''}]);}}/>
+              <BiLogoJava color="var(--color-secundario)" className="h-11 w-auto cursor-pointer " onClick={() => {setOpenModal(!openModal); setTitulo ([{id: '0',tituloText:'Java', imagen:'Platzi',experiencia:'Platzi',conocimiento:''}]);}}/>
+              <BiLogoPostgresql color="var(--color-secundario)" className="h-11 w-auto cursor-pointer " onClick={() => {setOpenModal(!openModal); setTitulo ([{id: '0',tituloText:'Postgret', imagen:'Platzi',experiencia:'',conocimiento:''}]);}}/>
+              <SiMysql color="var(--color-secundario)" className="h-11 w-auto cursor-pointer " onClick={() => {setOpenModal(!openModal); setTitulo ([{id: '0',tituloText:'Mysql', imagen:'Platzi',experiencia:'Platzi',conocimiento:''}]);}}/>
             </div>
             <div>
             <h1 className=' text-white'>Otros</h1>
-            <DiGit color="var(--color-secundario)" className="h-11 w-auto cursor-pointer " onClick={() => {setOpenModal(!openModal); setTitulo ('Git');}}/>
+            <DiGit color="var(--color-secundario)" className="h-11 w-auto cursor-pointer " onClick={() => {setOpenModal(!openModal); setTitulo ([{id: '0',tituloText:'Git', imagen:'Platzi',experiencia:'',conocimiento:''}]);}}/>
             </div>
             </figure>
             <section className=" absolute top-0">
@@ -73,13 +73,13 @@ const valoresClassdeSection = `grid grid-cols-[1fr,2fr,2fr]  grid-rows-[1fr,1fr,
       
           <button className=" absolute top-4 right-4"  onClick={() => {setOpenModal(!openModal)}}>X</button>
           <div className=" flex flex-col">
-          <h1 className=" text-7xl font-bold py-5">{titulo}</h1>
-          <h1>Certificados</h1>
-          <p>ffffffff</p>
-          <h1>Experiencia</h1>
-          <p>dddd</p>
-          <h1>Conocimiento</h1>
-          <p>ffffffff</p>
+          <h1 className=" text-7xl font-bold py-5">{titulo[0].tituloText}</h1>
+          <h1 className=" text-2xl">Certificados</h1>
+          <p>{titulo[0].imagen}</p>
+          <h1 className=" text-2xl">Experiencia</h1>
+          <p>{titulo[0].experiencia}</p>
+          <h1 className=" text-2xl">Conocimiento</h1>
+          <p>{titulo[0].conocimiento}</p>
           </div>
         </Modal>}
 

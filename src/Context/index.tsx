@@ -9,9 +9,11 @@ interface VariableGlobal {
   setCambiarVariable:React.Dispatch<React.SetStateAction<boolean>>;
   Temaoscuro:string;
   TemaClaro:string;
-  titulo:string;
-  setTitulo: React.Dispatch<React.SetStateAction<string>>;
+  titulo: Array<Titulos>;
+  setTitulo: React.Dispatch<React.SetStateAction<Array<Titulos>>>;
 }
+
+type Titulos = {id:string, tituloText:string, imagen:string, experiencia : string, conocimiento:string};
 
 
  const GlobalContext= createContext<VariableGlobal>({} as VariableGlobal)
@@ -26,7 +28,7 @@ function GlobalProvider({children}:{children:React.ReactNode}):JSX.Element {
   const [openModal, setOpenModal] = useState<boolean>(false)
 
   //valores del modal
-  let [titulo, setTitulo] = useState<string>('')
+  let [titulo, setTitulo] = useState<Array<Titulos>>([])
  
     return(
       <GlobalContext.Provider value={{openModal, setOpenModal, cambiarVariable, setCambiarVariable, Temaoscuro,TemaClaro, titulo, setTitulo,

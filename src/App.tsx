@@ -1,6 +1,5 @@
 import { useRoutes , BrowserRouter,} from "react-router-dom";
 import {GlobalProvider} from "./Context";
-import { Contactame } from "./Componentes/Contactame";
 import Principal from './Paginas/Principal';
 import Navbar from './Componentes/Navbar';
 import Acercade from './Paginas/Acerca de';
@@ -29,7 +28,7 @@ function App() {
     <BrowserRouter>
     <Navbar/>
     <AppRutas/>
-    <Contactame/>
+    
     </BrowserRouter>
 </GlobalProvider>
 

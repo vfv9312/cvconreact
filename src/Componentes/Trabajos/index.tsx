@@ -17,7 +17,7 @@ interface Certificado {
 
 const Trabajos = () => {
 
-    let [Certificados, setCertificados]= useState<Certificados[]>(
+    let [Certificados]= useState<Certificados[]>(
         [
             {Frontend : [
                 {Titulo:'Curso Práctico de HTML y CSS - Platzi',Link:'https://platzi.com/p/vfv9312787/curso/1758-course/diploma/detalle/'},

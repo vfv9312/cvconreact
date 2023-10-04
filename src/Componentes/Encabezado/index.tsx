@@ -46,7 +46,7 @@ const valoresClassdeSection = `grid grid-cols-[1fr,2fr,2fr]  grid-rows-[1fr,1fr,
               <div className=' col-[1/2] m-[0_0_120px_0]'>
               <h1 className=' text-white'>Fronted</h1>
             <FaReact color="var(--color-secundario)" className="h-11 w-auto cursor-pointer" onClick={() => {setOpenModal(!openModal); setTitulo ([{id:'0',tituloText:'ReactJs', imagen:'3 Certificados en Platzi',experiencia:'',conocimiento:'State, Portals, Componentes, '}]);}} /> 
-            <SiVite color="var(--color-secundario)" className="h-11 w-auto cursor-pointer" onClick={() => {setOpenModal(!openModal); setTitulo ([{id: '0',tituloText:'Vite', imagen:'Platzi',experiencia:'',conocimiento:''}]);}}/>
+            <SiVite color="var(--color-secundario)" className="h-11 w-auto cursor-pointer" onClick={() => {setOpenModal(!openModal); setTitulo ([{id: '0',tituloText:'Vite', imagen:'Platzi',experiencia:'Tienda Online ',conocimiento:''}]);}}/>
             <BiLogoHtml5 color="var(--color-secundario)" className="h-11 w-auto cursor-pointer" onClick={() => {setOpenModal(!openModal); setTitulo ([{id: '0',tituloText:'HTML5', imagen:'Platzi',experiencia:'',conocimiento:''}]);}}/>
             <BiLogoCss3 color="var(--color-secundario)" className="h-11 w-auto cursor-pointer" onClick={() => {setOpenModal(!openModal); setTitulo ([{id: '0',tituloText:'CSS3', imagen:'Platzi',experiencia:'',conocimiento:''}]);}}/>
             <BiLogoJavascript color="var(--color-secundario)" className="h-11 w-auto cursor-pointer" onClick={() => {setOpenModal(!openModal); setTitulo ([{id: '0',tituloText:'Javascript', imagen:'Platzi',experiencia:'',conocimiento:''}]);}}/>

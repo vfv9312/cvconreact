@@ -4,7 +4,8 @@ import { FaReact } from "react-icons/fa";
 import { BiLogoJavascript, BiLogoTypescript, BiLogoTailwindCss ,BiLogoHtml5, BiLogoCss3,BiLogoJava, BiLogoSpringBoot, BiLogoPostgresql } from "react-icons/bi";
 import { SiVite, SiMysql } from "react-icons/si";
 import { DiGit } from "react-icons/di";
-import Imagen from '../../assets/mobile.svg'
+import Imagen from '../../assets/mobile.svg';
+import Perfil from '../../assets/yo.jpeg';
 import '../../App.css'
 import 'animate.css';
 import { GlobalContext } from "../../Context";
@@ -30,7 +31,7 @@ const valoresClassdeSection = `grid grid-cols-[1fr,2fr,2fr]  grid-rows-[1fr,1fr,
 
         <section className={valoresClassdeSection }>
           <figure className='col-[1/4] row-[1/2] justify-self-center'>
-            <img className=" justify-items-center  w-48 h-48 border-l-stone-950 rounded-full  animate__animated animate__backInDown" src="https://scontent.ftgz3-1.fna.fbcdn.net/v/t1.6435-9/86461782_3324039157613227_1587997851990884352_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=174925&_nc_eui2=AeGYz5jOMYikpUge9UPhtnyboaNHaxJOCFiho0drEk4IWNb8-vJCYMOEHLIHpqqOB1HAYWwESCsplw3jg3Faxs_Z&_nc_ohc=MqZyoRmxj4sAX9d0hDG&_nc_ht=scontent.ftgz3-1.fna&oh=00_AfBSWRH9cw12U9btbO28H9B8B7g6ZCYx6IOBxY8oEDdPPQ&oe=652245E1"/>
+            <img className=" justify-items-center  w-48 h-48 border-l-stone-950 rounded-full  animate__animated animate__backInDown" src={Perfil}/>
             </figure>
           <figure className='col-[1/2] row-[3/4] '>
           <img src={Imagen} className='  w-52 h-auto'></img>

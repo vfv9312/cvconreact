@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import { createContext } from "react";
 import 'animate.css';
 
+
+
+
 interface VariableGlobal {
   openModal: boolean;
   setOpenModal:React.Dispatch<React.SetStateAction<boolean>>;

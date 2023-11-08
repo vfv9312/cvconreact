@@ -12,9 +12,6 @@ import { GlobalContext } from "../../Context";
 import { Modal } from "../Modal";
 
 
-
-
-
 const Encabezado = () => {
   const {cambiarVariable,
      TemaClaro, 
@@ -25,6 +22,7 @@ const Encabezado = () => {
     setTitulo
   } = useContext(GlobalContext)
 const valoresClassdeSection = `grid grid-cols-[1fr,2fr,2fr]  grid-rows-[1fr,1fr,1fr]   z-0 w-full max-h-screen relative perspective-20 overflow-x-hidden overflow-y-scroll ${cambiarVariable ? TemaClaro : Temaoscuro}`;
+
 
 
     return (
@@ -42,28 +40,30 @@ const valoresClassdeSection = `grid grid-cols-[1fr,2fr,2fr]  grid-rows-[1fr,1fr,
           <h5 className="text-light mt-4 text-white">Desarrollador FullStack</h5>
           <h1 className=' m-[30px_0_0_0] sm:m-[30px_0_10px_0] text-white text-center text-lg font-bold'>Habilidades</h1>
           </article>
+
+          
           
             <figure className='grid grid-cols-3 justify-center col-[2/4]'>
               <div className=' col-[1/2] m-[0_0_120px_0]'>
               <h1 className=' text-white'>Fronted</h1>
-            <FaReact color="var(--color-secundario)" className="h-11 w-auto cursor-pointer" onClick={() => {setOpenModal(!openModal); setTitulo ([{id:'0',tituloText:'ReactJs', imagen:'3 Certificados en Platzi',experiencia:'',conocimiento:'State, Portals, Componentes, '}]);}} /> 
-            <SiVite color="var(--color-secundario)" className="h-11 w-auto cursor-pointer" onClick={() => {setOpenModal(!openModal); setTitulo ([{id: '0',tituloText:'Vite', imagen:'Platzi',experiencia:'Tienda Online ',conocimiento:''}]);}}/>
-            <BiLogoHtml5 color="var(--color-secundario)" className="h-11 w-auto cursor-pointer" onClick={() => {setOpenModal(!openModal); setTitulo ([{id: '0',tituloText:'HTML5', imagen:'Platzi',experiencia:'',conocimiento:''}]);}}/>
-            <BiLogoCss3 color="var(--color-secundario)" className="h-11 w-auto cursor-pointer" onClick={() => {setOpenModal(!openModal); setTitulo ([{id: '0',tituloText:'CSS3', imagen:'Platzi',experiencia:'',conocimiento:''}]);}}/>
-            <BiLogoJavascript color="var(--color-secundario)" className="h-11 w-auto cursor-pointer" onClick={() => {setOpenModal(!openModal); setTitulo ([{id: '0',tituloText:'Javascript', imagen:'Platzi',experiencia:'',conocimiento:''}]);}}/>
-            <BiLogoTypescript color="var(--color-secundario)" className="h-11 w-auto cursor-pointer " onClick={() => {setOpenModal(!openModal); setTitulo ([{id: '0',tituloText:'Typscript', imagen:'Platzi',experiencia:'',conocimiento:''}]);}}/>
-            <BiLogoTailwindCss color="var(--color-secundario)" className="h-11 w-auto cursor-pointer " onClick={() => {setOpenModal(!openModal); setTitulo ([{id: '0',tituloText:'Tailwind', imagen:'Platzi',experiencia:'',conocimiento:''}]);}}/>
+            <FaReact color="var(--color-secundario)" className="h-11 w-auto cursor-pointer" onClick={() => {setOpenModal(!openModal); setTitulo ([{id:'0',tituloText:'React', imagen:'Cuento con 3 certificados en React Native y 3 en React Js en la plataforma Platzi en el cual continúo aprendiendo',experiencia:'He creado una aplicacion movil con React Native en donde utilizo una api de pokemones para crear un pokedex donde podemos guardar eliminar o quitar de nuestros pokemones favoritos; asi mismo este portafolio esta hecho en React Js con Tailwind',conocimiento:'useState, Portals, Componentes, useEffect, useContext, Typescript, JavaScript consumo de Apis y uso de algunas librerias complementarias '}]);}} /> 
+            <SiVite color="var(--color-secundario)" className="h-11 w-auto cursor-pointer" onClick={() => {setOpenModal(!openModal); setTitulo ([{id: '0',tituloText:'Vite', imagen:'2 certificados donde aprendi a usar Vite junto con React para implementar aplicacionciones web',experiencia:'Cree una aplicacion donde uso una api para emular el funcionamiento de una tienda online con React Js',conocimiento:'Entorno de vite'}]);}}/>
+            <BiLogoHtml5 color="var(--color-secundario)" className="h-11 w-auto cursor-pointer" onClick={() => {setOpenModal(!openModal); setTitulo ([{id: '0',tituloText:'HTML5', imagen:'Un aproximado de 4 certificados en Platzi sin contar que ya contaba con experiencia desde la Universidad',experiencia:'Creacion de una aplicacion para el trabajo donde se puede estudiar para las auditorias y muchos otros proyectos en Fronted en donde se ocupa',conocimiento:'Etiquetas, importacion de tipografias, e implementacion junto con otras herramientas o Framework'}]);}}/>
+            <BiLogoCss3 color="var(--color-secundario)" className="h-11 w-auto cursor-pointer" onClick={() => {setOpenModal(!openModal); setTitulo ([{id: '0',tituloText:'CSS3', imagen:'Un aproximado de 4 certificados en Platzi sin contar que ya contaba con experiencia desde la universidad',experiencia:' En multiplis aplicaciones en donde he trabajado en Fronted he implementado CSS hasta en ReactNative donde la sitaxis es parecida',conocimiento:'Flex, Grid, animacion,'}]);}}/>
+            <BiLogoJavascript color="var(--color-secundario)" className="h-11 w-auto cursor-pointer" onClick={() => {setOpenModal(!openModal); setTitulo ([{id: '0',tituloText:'Javascript', imagen:'3 Certificados en el Lenguaje de JavaScript',experiencia:'Creacion de multiples proyecto desde minijuegos hasta paginas para administrar cursos para las capacitaciones',conocimiento:'Fundamentos JavaScript, Programacion Orientado a Objetos, Framework, consumo de Apis'}]);}}/>
+            <BiLogoTypescript color="var(--color-secundario)" className="h-11 w-auto cursor-pointer " onClick={() => {setOpenModal(!openModal); setTitulo ([{id: '0',tituloText:'Typscript', imagen:'3 Certificados en Plantzi',experiencia:'Creacion de este portafolio en React JS y creacion de una aplicacion movil utilizando React Native',conocimiento:'Fundamentos TypeScript, Programacion Orientado a Objetos, Framework, consumo de Apis'}]);}}/>
+            <BiLogoTailwindCss color="var(--color-secundario)" className="h-11 w-auto cursor-pointer " onClick={() => {setOpenModal(!openModal); setTitulo ([{id: '0',tituloText:'Tailwind', imagen:'2 Certificados en Platzi',experiencia:'',conocimiento:''}]);}}/>
             </div>
             <div className=' col-[2/3]'>
               <h1 className=' text-white'>Backed</h1>
-              <BiLogoSpringBoot color="var(--color-secundario)" className="h-11 w-auto cursor-pointer" onClick={() => {setOpenModal(!openModal); setTitulo ([{id: '0',tituloText:'SpringBoot', imagen:'Platzi',experiencia:'',conocimiento:''}]);}}/>
-              <BiLogoJava color="var(--color-secundario)" className="h-11 w-auto cursor-pointer " onClick={() => {setOpenModal(!openModal); setTitulo ([{id: '0',tituloText:'Java', imagen:'Platzi',experiencia:'Platzi',conocimiento:''}]);}}/>
-              <BiLogoPostgresql color="var(--color-secundario)" className="h-11 w-auto cursor-pointer " onClick={() => {setOpenModal(!openModal); setTitulo ([{id: '0',tituloText:'Postgret', imagen:'Platzi',experiencia:'',conocimiento:''}]);}}/>
-              <SiMysql color="var(--color-secundario)" className="h-11 w-auto cursor-pointer " onClick={() => {setOpenModal(!openModal); setTitulo ([{id: '0',tituloText:'Mysql', imagen:'Platzi',experiencia:'Platzi',conocimiento:''}]);}}/>
+              <BiLogoSpringBoot color="var(--color-secundario)" className="h-11 w-auto cursor-pointer" onClick={() => {setOpenModal(!openModal); setTitulo ([{id: '0',tituloText:'SpringBoot', imagen:'Ninguna certificación',experiencia:'He trabajado poco pero he apoyado hen algunas partes de logica ',conocimiento:'Ningun proyecto completo'}]);}}/>
+              <BiLogoJava color="var(--color-secundario)" className="h-11 w-auto cursor-pointer " onClick={() => {setOpenModal(!openModal); setTitulo ([{id: '0',tituloText:'Java', imagen:'2 certificados en Platzi sin mencionar que ya tenia conocimientos de la universidad',experiencia:'Programas de logica en POO para la escuela y algunas funciones en el trabajo',conocimiento:'Fundamentos de Java, Programación Orientado a Objetos'}]);}}/>
+              <BiLogoPostgresql color="var(--color-secundario)" className="h-11 w-auto cursor-pointer " onClick={() => {setOpenModal(!openModal); setTitulo ([{id: '0',tituloText:'Postgret', imagen:'Conocimiento en SQL',experiencia:'',conocimiento:''}]);}}/>
+              <SiMysql color="var(--color-secundario)" className="h-11 w-auto cursor-pointer " onClick={() => {setOpenModal(!openModal); setTitulo ([{id: '0',tituloText:'Mysql', imagen:'2 Certificados en Platzi y conocimiento anterior por la unversidad',experiencia:'En algunos proyectos escolares de tiendas y otros servicios',conocimiento:'Tablas, permisos de usuario, Trigger, Vistas, Diagrama Entidad Relacion'}]);}}/>
             </div>
             <div>
             <h1 className=' text-white'>Otros</h1>
-            <DiGit color="var(--color-secundario)" className="h-11 w-auto cursor-pointer " onClick={() => {setOpenModal(!openModal); setTitulo ([{id: '0',tituloText:'Git', imagen:'Platzi',experiencia:'',conocimiento:''}]);}}/>
+            <DiGit color="var(--color-secundario)" className="h-11 w-auto cursor-pointer " onClick={() => {setOpenModal(!openModal); setTitulo ([{id: '0',tituloText:'Git', imagen:'Conocimiento al utilizar la herramienta',experiencia:'Todos los proyecyos que realizado a partir del 2022 comence a guardarlos en GitHub',conocimiento:' Creaciones de repositorios, Creacion de ramas, versiones, etc'}]);}}/>
             </div>
             </figure>
             <section className=" absolute top-0">

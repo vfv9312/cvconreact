@@ -59,7 +59,7 @@ const Trabajos = () => {
 <h2>Licenciatura en Sistemas Computacionales</h2> <h3>(Titulado)</h3>
 <p>Tiempo cursado : 2012 a 2017</p>
 </div>
-<div className="px-8 col-[1/3] row-[3/4] sm:row-[2/3] sm:col-[2/3] grid gap-5 ">
+<div className="px-8 col-[1/3] row-[3/4] sm:row-[2/3] sm:col-[2/3] grid gap-5 pb-28">
     <h1 className="font-extrabold text-xl">Certificados</h1>
     <div>
       {Certificados.map((categoria, index) => (

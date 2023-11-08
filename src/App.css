@@ -54,6 +54,10 @@
   left: 50%;
   top: 200%;
 }
+.card-five{
+  left: 10%;
+  top: 50%;
+}
 
 .image_foregroundone{
   transform: translateZ(2px) scale(0.5);
@@ -73,6 +77,14 @@
 .image_foregroundfour{
   transform: translateZ(3px) scale(0.5);
   transform-origin: 80% 400%;
+}
+.image_foregroundfive{
+  transform: translateZ(3px) scale(0.5);
+  transform-origin: 40% 550%;
+}
+.image_foregroundsix{
+  transform: translateZ(2px) scale(0.5);
+  transform-origin: 100% 650%;
 }
 
 .book {
